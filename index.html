@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--    elementy blokowe rozciągają się na pełną szerokość dostępnego miejsca w oknie przeglądarki. Jeżeli jest puste (brak contentu)-->
+    <!--     elementy liniowe, zajmują tyle miejsca ile zawarta w nich treść, domyślnie ustawiają się jeden obok drugirgo-->
+    <div>
+
+        <!--        a{link}*5-->
+        <a href="">link</a>
+        <a href="">link</a>
+        <a href="">link</a>
+        <a href="">link</a>
+        <a href="">link</a>
+
+    </div>
+    <!--    do tworzenia formularza, uzywamy znacznika from-->
+    <div id="formularz">
+        <from action="" method="">
+            <!--        input typu text przyjmuje wartosci tekstowe-->
+            <input type="text"><br>
+            <input type="tel"><br>
+<!--            <input type="number"><br> pozwala na wpisywanie tylko wartości liczbowych i znaków specjalnych jak +))-->
+<!--            atrybut value jest potrzebny do skryptu php który jest odpalany przy wysyłaniu do formularza(z atrybutu action)-->
+            <!--           do grupowania inputów typu radio potrzebujemy dla kazdego z nich uzyc atrybutu name z ta sama wartoscia-->
+            <input type="radio" name="age">-18
+            <input type="radio" name="age">18
+            <input type="radio" name="age">18+
+            
+<!--            atrybut name jest potrzebny do zdefiniowania nazyw konkretnego pola formularza-->
+            <input type="text" name="firstname">
+            <input type="text" name="lastname">
+<!--            atrybut placeholder sluzy do opisania konkretnego inputa (opis pojawi się wewnątrz niego)-->
+        <input type="text" name=" birthday" placeholder="wpisz datę urodzin">
+
+        </from>
+    </div>
+<!--w3schools.com-->
+</body>
+
+</html>
