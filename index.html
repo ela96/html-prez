@@ -33,11 +33,34 @@
             <input type="radio" name="age">18+
             
 <!--            atrybut name jest potrzebny do zdefiniowania nazyw konkretnego pola formularza-->
-            <input type="text" name="firstname">
+<!--           etykiet opisują pole formularza jeżeli atrybut for labela odpowiada id inputa to po kliknięciu w label zaznacza się konkretny input-->
+           <label for="firstname">Podaj imię: </label>
+            <input type="text" name="firstname" id="firstname">
             <input type="text" name="lastname">
 <!--            atrybut placeholder sluzy do opisania konkretnego inputa (opis pojawi się wewnątrz niego)-->
         <input type="text" name=" birthday" placeholder="wpisz datę urodzin">
-
+<!--        textarea pozwala uzytkownikowi wpisać dłuższy tekst, za pomocą atrybuty maxlenght, możemy ustalić maksymalną ilość wpisywanych znaków-->
+        <textarea name="" id="" cos="30" rews="10" maxlenght="1000">
+            
+        </textarea>
+<!--        selekt pozwala na stworzenie listy rozwijanej-->
+        
+        <select name="" id="">  
+           <option value="warszawa">warszawa</option>  
+            <option value="kraków">kraków</option> 
+            <option value="katowice">katowice</option> 
+        </select>
+<!--        do wysyłania formularzy służy input type="submit"-->
+<!--      dla tego inputa atrybut typu value jest OBLIGATORYJNY-->
+       <input type="submit" valeue="wyślij">
+<!--
+       korzystanie z github pages 1) wysyłamu plik na serwer
+       2) wchodzimy do naszego repozytorium
+       3) wyieramy settings
+       4) scrolujemy do sekcji github pages
+       5) wybieramy source na master branch i  zapisujemy
+       6) scrolujemy ponownie i w sekcji github pages otrzymujemy link do naszej strony
+-->
         </from>
     </div>
 <!--w3schools.com-->
