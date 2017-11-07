@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+</head>
+
+<body>
+    <header align="center">
+        <h1>Formularz
+        </h1>
+        <p>Wypełnij formularz aby zapisać się na szkolenie</p>
+
+    </header>
+    <from action="mailto:ela.a@onet.pl subject=formularz" method="post">
+        <table id="formularz" align="center">
+            <tbody>
+
+
+                <tr>
+                    <td>
+                        <label for="firstname"> Podaj imię:     </label>
+
+                    </td>
+                    <td>
+                        <input type="text" name="firstname" id="firstname" placeholder="Imie">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="lastname"> Podaj nazwisko:   </label>
+
+                    </td>
+                    <td>
+                        <input type="text" name="lastname" id="lastname" placeholder="Nazwisko">
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email"> Podaj adres e-mail: </label>
+
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="nazwa@mail.com">
+
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="telefon"> Podaj nr. tel.:   </label>
+
+                    </td>
+                    <td>
+
+                        <input type="tel" name="telefon" id="telefon" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" />
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="Miasto">Wybierz miasto: </label>
+                    </td>
+                    <td>
+                        <select name="Miasto" id="Miasto">
+		<option>Kraków</option>
+		<option>Warszawa</option>
+		<option>Katowice</option>
+	</select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="plec">Wybierz płeć: </label></td>
+                    <td>
+                        <input type="radio" name="plec" value="Kobieta" />Kobieta
+                        <input type="radio" name="plec" value="Mężczyzna" />Mężczyzna
+                    </td>
+                </tr>
+
+
+
+
+            </tbody>
+        </table>
+        <div align="center">
+            <input type="checkbox" name="zgoda" value="wartość" />Wyrażam zgodę na przetwarzanie danych osobowych(...)<br/>
+            <textarea name="" id="" cos="30" rews="10" maxlenght="1000" align="center" placeholder="Napisz wiadomość"></textarea><br/>
+            <input type="submit" valeue="wyślij">
+        </div>
+    </from>
+
+
+
+</body>
+</html>
